@@ -5,15 +5,29 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>{{ page.title }} | {{ site.title }}</title>
-
-    <!-- GitHub Pages theme CSS (cayman等で用意される) -->
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 
 <body>
-    <main class="container-lg px-3 my-5 markdown-body">
+    <div class="container-lg px-3 my-5">
+        <header style="margin-bottom: 2rem;">
+            <h1 style="margin: 0;">
+                <a href="{{ '/' | relative_url }}" style="text-decoration:none;">
+                    {{ site.title }}
+                </a>
+            </h1>
+            {% if site.description %}
+            <p style="margin: .5rem 0 0;">{{ site.description }}</p>
+            {% endif %}
+            <nav style="margin-top: 1rem;">
+                <a href="{{ '/' | relative_url }}">Home</a>
+                &nbsp;|&nbsp;
+                <a href="{{ '/tags' | relative_url }}">Tags</a>
+            </nav>
+        </header>
+
         {{ content }}
-    </main>
+    </div>
 </body>
 
 </html>

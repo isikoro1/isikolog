@@ -1,6 +1,6 @@
 title: isikolog
 description: いしこログ
-theme: minima
+theme: jekyll-theme-minimal
 url: "https://isikoro1.github.io"
 baseurl: "/isikolog"
 
