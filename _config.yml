@@ -1,2 +1,3 @@
-title: My Blog
-theme: minima
+title: isikolog
+description: Engineering notes
+theme: jekyll-theme-cayman
