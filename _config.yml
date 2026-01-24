@@ -4,7 +4,7 @@ theme: jekyll-theme-minimal
 url: "https://isikoro1.github.io"
 baseurl: "/isikolog"
 timezone: Asia/Tokyo
-future: true
+# future: true
 
 # ↓別のテーマ
 # jekyll-theme-slate 
