@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "最初の記事"
+tags: [jekyll, github-pages, diary]
 ---
 今日はGitHub Pagesでブログを作った。
 

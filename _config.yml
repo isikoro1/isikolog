@@ -1,5 +1,8 @@
 title: isikolog
 description: いしこログ
-theme: jekyll-theme-slate
+theme: minima
 url: "https://isikoro1.github.io"
 baseurl: "/isikolog"
+
+# ↓別のテーマ
+# jekyll-theme-slate 
