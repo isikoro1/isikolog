@@ -11,3 +11,5 @@ title: Home
     </li>
   {% endfor %}
 </ul>
+
+<div><a href= "https://github.com/isikoro1/isikolog?tab=readme-ov-file">Github</a></div>
