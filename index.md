@@ -18,4 +18,14 @@ title: Home
       Github
     </a>
   </div>
+  <div>
+    <a href= "https://github.com/isikoro1/isikoro1site">
+      isikoro1Site
+    </a>
+  </div>
+  <div>
+    <a href= "https://x.com/mot1173137">
+      X
+    </a>
+  </div>
 </footer>
