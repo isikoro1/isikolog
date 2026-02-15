@@ -19,7 +19,7 @@ title: Home
     </a>
   </div>
   <div>
-    <a href= "https://github.com/isikoro1/isikoro1site">
+    <a href= "https://isikoro1.github.io/isikoro1site/">
       isikoro1Site
     </a>
   </div>
