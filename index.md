@@ -19,6 +19,11 @@ title: Home
     </a>
   </div>
   <div>
+    <a href= "https://qiita.com/isikoro">
+      Qiita
+    </a>
+  </div>
+  <div>
     <a href= "https://isikoro1.github.io/isikoro1site/">
       isikoro1Site
     </a>
