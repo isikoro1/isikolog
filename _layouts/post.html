@@ -12,11 +12,11 @@ layout: default
         <p class="post-meta">{{ page.date | date: "%Y-%m-%d" }}</p>
 
         {% if page.tags and page.tags.size > 0 %}
-        <div class="post-tags" aria-label="Tags">
-            {% for tag in page.tags %}
-            <span class="tag-chip">{{ tag }}</span>
-            {% endfor %}
-        </div>
+            <div class="post-tags" aria-label="Tags">
+                {% for tag in page.tags %}
+                    <span class="tag-chip">{{ tag }}</span>
+                {% endfor %}
+            </div>
         {% endif %}
     </header>
 
