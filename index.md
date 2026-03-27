@@ -5,7 +5,6 @@ title: Home
 
 <section class="home-intro">
   <h2 class="home-title">Posts</h2>
-  <p class="home-copy">Markdown ベースの運用はそのままに、読みやすさを優先した 1 カラムの一覧です。</p>
 </section>
 
 <ol class="post-feed">
