@@ -6,5 +6,11 @@ baseurl: "/isikolog"
 timezone: Asia/Tokyo
 # future: true
 
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: true
+
+
 # ↓別のテーマ
 # jekyll-theme-slate 
