@@ -2,7 +2,7 @@ title: isikolog
 description: いしこログ
 theme: jekyll-theme-minimal
 url: "https://blog.isikoro.dev"
-baseurl: "/isikolog"
+baseurl: ""
 timezone: Asia/Tokyo
 # future: true
 
