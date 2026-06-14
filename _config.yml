@@ -4,6 +4,8 @@ theme: jekyll-theme-minimal
 url: "https://blog.isikoro.dev"
 baseurl: ""
 timezone: Asia/Tokyo
+x_username: "mot1173137"
+# default_og_image: "/assets/images/og/default.png"
 # future: true
 
 markdown: kramdown
