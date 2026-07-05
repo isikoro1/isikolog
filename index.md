@@ -89,6 +89,6 @@ title: Home
 <footer class="home-footer">
   <a href="https://github.com/isikoro1/isikolog?tab=readme-ov-file">GitHub</a>
   <a href="https://qiita.com/isikoro">Qiita</a>
-  <a href="https://isikoro1.github.io/isikoro1site/">isikoro1Site</a>
+  <a href="https://isikoro.dev/">App</a>
   <a href="https://x.com/mot1173137">X</a>
 </footer>
