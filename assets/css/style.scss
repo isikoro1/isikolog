@@ -141,7 +141,7 @@ pre {
 }
 
 .page-home .main-content {
-  width: min(100%, 1080px);
+  width: min(100%, 920px);
 }
 
 .home-intro {
@@ -218,7 +218,7 @@ pre {
 
 .post-feed {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
   margin: 0;
   padding: 0;
