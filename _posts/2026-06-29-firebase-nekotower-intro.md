@@ -2,6 +2,7 @@
 layout: post
 title: "ねこタワーのオンライン対戦にFirebaseを使っている"
 date: 2026-06-29 00:00:00 +0900
+section: tech
 tags: [Firebase, JavaScript, 個人開発, ねこタワー]
 ---
 

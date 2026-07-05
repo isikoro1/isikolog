@@ -157,6 +157,61 @@ pre {
   font-size: 1rem;
 }
 
+.post-tabs {
+  position: relative;
+}
+
+.tab-radio {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tab-list {
+  display: inline-flex;
+  gap: 0.25rem;
+  margin: 0 0 1rem;
+  padding: 0.25rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.tab-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 5.5rem;
+  min-height: 2.35rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 8px;
+  color: var(--text-muted);
+  font-size: 0.94rem;
+  font-weight: 800;
+  line-height: 1;
+  cursor: pointer;
+  user-select: none;
+}
+
+.tab-button:hover {
+  color: var(--text);
+}
+
+.tab-panel {
+  display: none;
+}
+
+#tab-tech:checked ~ .tab-list .tab-button-tech,
+#tab-idea:checked ~ .tab-list .tab-button-idea {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+#tab-tech:checked ~ .tab-panels .tab-panel-tech,
+#tab-idea:checked ~ .tab-panels .tab-panel-idea {
+  display: block;
+}
+
 .post-feed {
   margin: 0;
   padding: 0;
@@ -572,6 +627,26 @@ a {
   margin-top: 0.45rem;
   color: var(--text-muted);
   font-size: 0.95rem;
+}
+
+.tab-list {
+  background: var(--surface);
+  backdrop-filter: blur(10px);
+}
+
+.tab-button {
+  color: var(--text-muted);
+}
+
+.tab-button:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+}
+
+#tab-tech:checked ~ .tab-list .tab-button-tech,
+#tab-idea:checked ~ .tab-list .tab-button-idea {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
 }
 
 .feed-section + .feed-section {

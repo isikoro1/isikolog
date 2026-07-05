@@ -2,6 +2,7 @@
 layout: post
 title: "Strutsについて整理する"
 date: 2026-07-05 00:00:00 +0900
+section: tech
 tags:
   - Java
   - Struts

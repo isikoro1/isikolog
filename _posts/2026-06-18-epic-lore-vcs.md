@@ -2,6 +2,7 @@
 layout: post
 title: "Epic GamesのLoreについてAIに聞いてみた"
 date: 2026-06-18
+section: tech
 tags:
   - ゲーム開発
   - バージョン管理
