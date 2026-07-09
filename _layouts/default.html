@@ -56,6 +56,13 @@
                 {% endif %}
             </div>
 
+            <input class="site-nav-toggle" type="checkbox" id="site-nav-toggle" aria-label="Toggle navigation">
+            <label class="site-nav-button" for="site-nav-toggle" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
             <nav class="site-nav" aria-label="Primary">
                 <a class="site-nav-link" href="{{ '/' | relative_url }}">Home</a>
                 <a class="site-nav-link" href="{{ '/tags' | relative_url }}">Tags</a>
