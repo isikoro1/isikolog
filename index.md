@@ -18,7 +18,7 @@ title: Home
       class="post-search-input"
       id="post-search-input"
       type="search"
-      placeholder="Search title, summary, tags"
+      placeholder="Search title, body, tags"
       autocomplete="off"
       spellcheck="false"
     >
@@ -38,9 +38,10 @@ title: Home
           {% if post_category == "tech" %}
             {% assign excerpt_source = post.excerpt | default: post.content %}
             {% assign clean_excerpt = excerpt_source | markdownify | strip_html | strip_newlines | replace: "  ", " " | strip %}
+            {% assign clean_content = post.content | markdownify | strip_html | strip_newlines | replace: "  ", " " | strip %}
             {% assign post_kind = post.kind | default: "Tech" %}
             {% assign tags_text = post.tags | join: " " %}
-            {% assign search_text = post.title | append: " " | append: clean_excerpt | append: " " | append: tags_text | downcase %}
+            {% assign search_text = post.title | append: " " | append: clean_content | append: " " | append: tags_text | downcase %}
             <li class="post-feed-item" data-search="{{ search_text | escape }}">
               <a class="post-card-link" href="{{ post.url | relative_url }}">
                 <div class="post-card-topline">
@@ -74,9 +75,10 @@ title: Home
           {% if post_category == "idea" %}
             {% assign excerpt_source = post.excerpt | default: post.content %}
             {% assign clean_excerpt = excerpt_source | markdownify | strip_html | strip_newlines | replace: "  ", " " | strip %}
+            {% assign clean_content = post.content | markdownify | strip_html | strip_newlines | replace: "  ", " " | strip %}
             {% assign post_kind = post.kind | default: "Idea" %}
             {% assign tags_text = post.tags | join: " " %}
-            {% assign search_text = post.title | append: " " | append: clean_excerpt | append: " " | append: tags_text | downcase %}
+            {% assign search_text = post.title | append: " " | append: clean_content | append: " " | append: tags_text | downcase %}
             <li class="post-feed-item" data-search="{{ search_text | escape }}">
               <a class="post-card-link" href="{{ post.url | relative_url }}">
                 <div class="post-card-topline">
