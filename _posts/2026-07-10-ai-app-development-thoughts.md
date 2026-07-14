@@ -2,8 +2,8 @@
 layout: post
 title: "AIでアプリをいくつか作って考えたこと"
 date: 2026-07-10
-section: notes
-kind: Notes
+section: idea
+kind: Idea
 tags: [AI, 個人開発, アプリ開発, エンジニアリング]
 summary: "AIを使って複数のアプリを作ってみた経験から、アイデア、実装、ユーザー体験、エンジニアリング判断について考えたことを整理する。"
 ---
