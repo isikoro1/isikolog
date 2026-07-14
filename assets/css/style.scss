@@ -245,13 +245,15 @@ pre {
 }
 
 #tab-tech:checked ~ .tab-list .tab-button-tech,
-#tab-idea:checked ~ .tab-list .tab-button-idea {
+#tab-idea:checked ~ .tab-list .tab-button-idea,
+#tab-notes:checked ~ .tab-list .tab-button-notes {
   background: var(--accent);
   color: #ffffff;
 }
 
 #tab-tech:checked ~ .tab-panels .tab-panel-tech,
-#tab-idea:checked ~ .tab-panels .tab-panel-idea {
+#tab-idea:checked ~ .tab-panels .tab-panel-idea,
+#tab-notes:checked ~ .tab-panels .tab-panel-notes {
   display: block;
 }
 
@@ -733,7 +735,8 @@ a {
 }
 
 #tab-tech:checked ~ .tab-list .tab-button-tech,
-#tab-idea:checked ~ .tab-list .tab-button-idea {
+#tab-idea:checked ~ .tab-list .tab-button-idea,
+#tab-notes:checked ~ .tab-list .tab-button-notes {
   background: var(--accent-soft);
   color: var(--accent-strong);
 }
