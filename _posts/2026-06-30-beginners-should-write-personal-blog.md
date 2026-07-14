@@ -2,7 +2,7 @@
 layout: post
 title: "初心者こそ個人ブログを書け。なんなら書くな。AIにやらせとけ。"
 date: 2026-06-30 00:00:00 +0900
-section: idea
+section: notes
 tags:
   - 個人ブログ
   - 学習
