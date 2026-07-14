@@ -11,6 +11,7 @@ title: Home
 <div class="post-tabs">
   <input class="tab-radio" type="radio" name="post-tab" id="tab-tech" checked>
   <input class="tab-radio" type="radio" name="post-tab" id="tab-idea">
+  <input class="tab-radio" type="radio" name="post-tab" id="tab-notes">
 
   <div class="post-search">
     <label class="post-search-label" for="post-search-input">Search posts</label>
@@ -27,6 +28,7 @@ title: Home
   <div class="tab-list" role="tablist" aria-label="Post categories">
     <label class="tab-button tab-button-tech" for="tab-tech" role="tab">Tech</label>
     <label class="tab-button tab-button-idea" for="tab-idea" role="tab">Idea</label>
+    <label class="tab-button tab-button-notes" for="tab-notes" role="tab">Notes</label>
   </div>
 
   <div class="tab-panels">
@@ -34,7 +36,7 @@ title: Home
       <h3 class="feed-section-title">Tech</h3>
       <ol class="post-feed">
         {% for post in site.posts %}
-          {% assign post_category = post.section | default: "idea" %}
+          {% assign post_category = post.section | default: "notes" %}
           {% if post_category == "tech" %}
             {% assign excerpt_source = post.excerpt | default: post.content %}
             {% assign clean_excerpt = excerpt_source | markdownify | strip_html | strip_newlines | replace: "  ", " " | strip %}
@@ -71,7 +73,7 @@ title: Home
       <h3 class="feed-section-title">Idea</h3>
       <ol class="post-feed">
         {% for post in site.posts %}
-          {% assign post_category = post.section | default: "idea" %}
+          {% assign post_category = post.section | default: "notes" %}
           {% if post_category == "idea" %}
             {% assign excerpt_source = post.excerpt | default: post.content %}
             {% assign clean_excerpt = excerpt_source | markdownify | strip_html | strip_newlines | replace: "  ", " " | strip %}
@@ -102,6 +104,43 @@ title: Home
         {% endfor %}
       </ol>
       <p class="post-no-results" hidden aria-live="polite">No matching Idea posts.</p>
+    </section>
+
+    <section class="feed-section tab-panel tab-panel-notes" aria-label="Notes posts">
+      <h3 class="feed-section-title">Notes</h3>
+      <ol class="post-feed">
+        {% for post in site.posts %}
+          {% assign post_category = post.section | default: "notes" %}
+          {% if post_category == "notes" %}
+            {% assign excerpt_source = post.excerpt | default: post.content %}
+            {% assign clean_excerpt = excerpt_source | markdownify | strip_html | strip_newlines | replace: "  ", " " | strip %}
+            {% assign clean_content = post.content | markdownify | strip_html | strip_newlines | replace: "  ", " " | strip %}
+            {% assign post_kind = post.kind | default: "Notes" %}
+            {% assign tags_text = post.tags | join: " " %}
+            {% assign search_text = post.title | append: " " | append: clean_content | append: " " | append: tags_text | downcase %}
+            <li class="post-feed-item" data-search="{{ search_text | escape }}">
+              <a class="post-card-link" href="{{ post.url | relative_url }}">
+                <div class="post-card-topline">
+                  <p class="post-card-meta">{{ post.date | date: "%Y-%m-%d" }}</p>
+                  <span class="post-kind-badge">{{ post_kind }}</span>
+                </div>
+                <h3 class="post-card-title">{{ post.title }}</h3>
+                {% if clean_excerpt != "" %}
+                  <p class="post-card-excerpt">{{ clean_excerpt }}</p>
+                {% endif %}
+                {% if post.tags and post.tags.size > 0 %}
+                  <div class="post-card-tags" aria-label="Tags">
+                    {% for tag in post.tags %}
+                      <span class="tag-chip">{{ tag }}</span>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ol>
+      <p class="post-no-results" hidden aria-live="polite">No matching Notes posts.</p>
     </section>
   </div>
 </div>
