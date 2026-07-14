@@ -2,7 +2,7 @@
 layout: post
 title: "AIを使いながら、まず小さく作ってみる"
 date: 2026-06-14
-section: notes
+section: idea
 tags:
   - AI
   - Codex
