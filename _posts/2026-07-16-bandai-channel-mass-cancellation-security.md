@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "バンダイチャンネル大量退会事件から考える、認可と異常検知"
+title: "バンダイチャンネルの大量退会事件がなぜ起きたのかを考える"
 date: 2026-07-16
 section: tech
 kind: Tech
